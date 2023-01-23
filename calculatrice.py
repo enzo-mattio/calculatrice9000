@@ -122,16 +122,15 @@ bouton_historique.place(
 # Clear history button
 effacer_historique_bouton = customtkinter.CTkButton(
   main,
-  corner_radius=5
-)
-effacer_historique_bouton = Button(
-  main, 
-  relief=RAISED, 
-  activebackground="gray", 
-  activeforeground="dark gray", 
+  
+  corner_radius=5,
+  text_color= "black",
+  fg_color= "silver",
   text="Effacer Historique", 
+  hover_color= "#999999",
   command= effacer_historique
-  )
+)
+
 effacer_historique_bouton.place(
   x=0, 
   y=32, 
@@ -437,8 +436,9 @@ bouton_clear = customtkinter.CTkButton(
   text="C", 
   font=("Sergoe UI", 14), 
   corner_radius=10,
-  fg_color="black",
-  text_color="silver",
+  fg_color="silver",
+  text_color="black",
+  hover_color="#999999",
   command=lambda: effacer()
 )
 bouton_clear.place(
